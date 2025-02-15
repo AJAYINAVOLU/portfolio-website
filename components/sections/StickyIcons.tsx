@@ -16,10 +16,10 @@ const StickyIcons: React.FC = () => {
   const isLargeScreen = useMediaQuery('(min-width: 768px)');
 
   const socialLinks: IconLinkProps[] = [
-    { icon: FaGithub, href: 'https://github.com/jaynanduri' },
-    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/jayantha-nanduri/' },
-    { icon: FaInstagram, href: 'https://www.instagram.com/jay_nanduri/' },
-    { icon: LeetcodeIcon, href: 'https://leetcode.com/u/nandurij98/'}
+    { icon: FaGithub, href: 'https://github.com/AJAYINAVOLU' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/ajayinavolu/' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/' },
+    { icon: LeetcodeIcon, href: 'https://leetcode.com/u/AJAY_REDDY_1999/'}
   ];
 
   useEffect(() => {
@@ -76,10 +76,10 @@ const StickyIcons: React.FC = () => {
           animate={contentControls}
         >
           <a
-            href="mailto:jayantha.nanduri@gmail.com"
+            href="mailto:ajay.inavolu@gmail.com"
             className="text-foreground hover:text-primary transition-colors duration-200 pb-2"
           >
-            jayantha.nanduri@gmail.com
+            ajay.inavolu@gmail.com
           </a>
         </motion.div>
         <motion.div 

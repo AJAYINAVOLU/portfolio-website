@@ -1,41 +1,51 @@
 // components/SkillsGrid.tsx
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { BiLogoTypescript } from "react-icons/bi";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiApachekafka, SiPytorch, SiNumpy, SiPandas, SiScikitlearn, 
-  SiLangchain, SiHuggingface, SiMongodb, SiGraphql, SiJenkins, SiKubernetes, SiMlflow } from "react-icons/si";
+
+// FontAwesome Icons
+import { FaPython, FaDatabase, FaJava, FaReact, FaGithub, FaDocker, FaAws } from 'react-icons/fa';
+
+// Remix Icons
+import { RiNextjsFill, RiJavascriptFill } from "react-icons/ri";
+
+// Simple Icons
+import { 
+  SiSpringboot, SiGraphql, SiApachekafka, SiMongodb, SiPostgresql, 
+  SiMysql, SiOracle, SiRedis, SiJenkins, SiKubernetes, SiElasticsearch, 
+  SiPostman, SiTestinglibrary, 
+  SiTerraform
+} from "react-icons/si";
+
+// Devicons
 import { DiSpark } from "react-icons/di";
-import { FaGolang } from "react-icons/fa6";
-import { VscAzure } from "react-icons/vsc";
-import { FaPython, FaDatabase, FaChartBar, FaGithub, FaJava, FaDocker, FaAws } from 'react-icons/fa';
+
 
 const SkillsGrid = () => {
   const skills = useMemo(() => [
     { icon: <FaPython />, name: 'Python' },
     { icon: <FaDatabase />, name: 'SQL' },
-    { icon: <FaGolang />, name: 'Go'},
     { icon: <FaJava />, name: 'Java' },
-    { icon: <BiLogoTypescript />, name: 'TypeScript' },
+    { icon: <RiJavascriptFill />, name: 'JavaScript' },
+    { icon: <FaReact />, name: 'React' },
     { icon: <RiNextjsFill />, name: 'Next.js' },
+    { icon: <SiSpringboot />, name: 'Spring Boot' },
     { icon: <SiGraphql />, name: 'GraphQL' },
-    { icon: <SiApachekafka />, name: 'Kafka'},
-    { icon: <DiSpark />, name: "Spark"},
-    { icon: <SiNumpy />, name: "Numpy"},
-    { icon: <SiPandas />, name: "Pandas"},
-    { icon: <SiHuggingface />, name: "Hugging Face"},
-    { icon: <SiPytorch />, name: "PyTorch"},
-    { icon: <SiLangchain />, name: "LangChain"},
-    { icon: <SiScikitlearn />, name: "Scikit-learn"},
-    { icon: <SiMlflow />, name: 'MLflow' },
-    { icon: <SiMongodb />, name: "MongoDB"},
-    { icon: <FaChartBar />, name: 'Power BI' },
+    { icon: <SiApachekafka />, name: 'Kafka' },
+    { icon: <DiSpark />, name: 'Spark' },
+    { icon: <SiMongodb />, name: 'MongoDB' },
+    { icon: <SiPostgresql />, name: 'PostgreSQL' },
+    { icon: <SiMysql />, name: 'MySQL' },
+    { icon: <SiOracle />, name: 'Oracle' },
+    { icon: <SiRedis />, name: 'Redis' },
     { icon: <FaGithub />, name: 'Git' },
-    { icon: <FaDocker />, name: 'Docker'},
+    { icon: <FaDocker />, name: 'Docker' },
     { icon: <SiKubernetes />, name: 'Kubernetes' },
     { icon: <SiJenkins />, name: 'Jenkins' },
     { icon: <FaAws />, name: 'AWS' },
-    { icon: <VscAzure />, name: 'Azure' },
+    { icon: <SiElasticsearch />, name: 'ELK Stack' },
+    { icon: <SiPostman />, name: 'Postman' },
+    { icon: <SiTestinglibrary />, name: 'TestNG' },
+    {icon:  <SiTerraform/>, name: 'Terraform'}
     
   ], []);
 

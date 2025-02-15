@@ -18,10 +18,10 @@ export const educations: EducationField[] = [
         logo: NortheasternIcon
     },
     {
-        university: "Mahindra University, India",
+        university: "Vellore Institute of Technology, India",
         degree: "Bachelor of Technology, Computer Science and Engineering",
-        duration: "Aug 2016 - Sep 2020",
-        year: "2016-2020",
+        duration: "Aug 2018 - May 2022",
+        year: "2018-2022",
         logo: MUIcon
     },
 ];

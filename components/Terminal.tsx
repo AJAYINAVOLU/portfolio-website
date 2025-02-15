@@ -8,27 +8,27 @@ interface CodeLines {
 }
 
 const Terminal = () => {
-  const [activeTab, setActiveTab] = useState<'python' | 'javascript'>('python');
-  const [typedLines, setTypedLines] = useState<{ [key: string]: string[] }>({ python: ['', '', ''], javascript: ['', '', ''] });
-  const [currentLine, setCurrentLine] = useState<{ [key: string]: number }>({ python: 0, javascript: 0 });
-  const [currentChar, setCurrentChar] = useState<{ [key: string]: number }>({ python: 0, javascript: 0 });
-  const [isTyping, setIsTyping] = useState<{ [key: string]: boolean }>({ python: false, javascript: false });
+  const [activeTab, setActiveTab] = useState<'java' | 'javascript'>('java');
+  const [typedLines, setTypedLines] = useState<{ [key: string]: string[] }>({ java: ['', '', ''], javascript: ['', '', ''] });
+  const [currentLine, setCurrentLine] = useState<{ [key: string]: number }>({ java: 0, javascript: 0 });
+  const [currentChar, setCurrentChar] = useState<{ [key: string]: number }>({ java: 0, javascript: 0 });
+  const [isTyping, setIsTyping] = useState<{ [key: string]: boolean }>({ java: false, javascript: false });
   const { ref, isVisible } = useScrollSection();
 
   const codeLines: CodeLines = useMemo(() => ({
-    python: [
-      'print("Hello, World! 👋 I\'m Jayantha Nanduri")',
-      'print("Current status: CS graduate student at Northeastern University")',
-      'print("Professional Summary: Machine Learning Engineer with 3+ years of experience in the FinTech industry. Skilled in implementing AI-based microservices using Python, SQL, Javascript, Docker, and AWS.")'
+    java: [
+      'System.out.println("Hello, World! 👋 I\'m Ajay Kumar Reddy Inavolu")',
+      'System.out.println("Current status: CS graduate student at Northeastern University")',
+      'System.out.println("Professional Summary: Dedicated Engineer with expertise in building scalable, high-performance microservices and real-time data processing solutions. Proficient in designing and deploying distributed cloud and AI platforms, leveraging Java, Spring Boot, Docker, AWS.")'
     ],
     javascript: [
-      'console.log("Hello, World! 👋 I\'m Jayantha Nanduri");',
+      'console.log("Hello, World! 👋 I\'m Ajay Kumar Reddy Inavolu");',
       'console.log("Current status: CS graduate student at Northeastern University");',
-      'console.log("Professional Summary: Machine Learning Engineer with 3+ years of experience in the FinTech industry. Skilled in implementing AI-based microservices using Python, SQL, Javascript, Docker, and AWS.");'
+      'console.log("Professional Summary: Dedicated Engineer with expertise in building scalable, high-performance microservices and real-time data processing solutions. Proficient in designing and deploying distributed cloud and AI platforms, leveraging Java, Spring Boot, Docker, AWS.");'
     ]
   }), []);
 
-  const typeLine = useCallback(async (language: 'python' | 'javascript') => {
+  const typeLine = useCallback(async (language: 'java' | 'javascript') => {
     const line = codeLines[language][currentLine[language]];
     if (currentChar[language] <= line.length) {
       setTypedLines(prev => ({
@@ -51,7 +51,7 @@ const Terminal = () => {
   useEffect(() => {
     if (isVisible) {
       const timer = setTimeout(() => {
-        setIsTyping({ python: true, javascript: true });
+        setIsTyping({ java: true, javascript: true });
       }, 500);
       return () => clearTimeout(timer);
     }
@@ -64,7 +64,7 @@ const Terminal = () => {
     }
   }, [activeTab, isTyping, typeLine]);
 
-  const handleTabChange = (tab: 'python' | 'javascript') => {
+  const handleTabChange = (tab: 'java' | 'javascript') => {
     setActiveTab(tab);
   };
 
@@ -101,11 +101,11 @@ const Terminal = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.4 }}
         >
-          {['python', 'javascript'].map((lang, index) => (
+          {['java', 'javascript'].map((lang, index) => (
             <motion.button
               key={lang}
               className={`mr-2 px-3 py-1 rounded-t-lg ${activeTab === lang ? 'bg-primary text-primary-foreground' : 'bg-secondary text-secondary-foreground'}`}
-              onClick={() => handleTabChange(lang as 'python' | 'javascript')}
+              onClick={() => handleTabChange(lang as 'java' | 'javascript')}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 + index * 0.1, duration: 0.4 }}
@@ -121,7 +121,7 @@ const Terminal = () => {
           transition={{ delay: 1, duration: 0.4 }}
         >
           <RiTerminalBoxFill className="text-primary mr-2" />
-          <span className="text-primary">jay@portfolio:~$</span>
+          <span className="text-primary">ajay@portfolio:~$</span>
           <span className="text-secondary ml-2">&gt;&gt;</span>
           <span className='text-muted-foreground'>{activeTab}</span>
         </motion.div>
@@ -130,9 +130,9 @@ const Terminal = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.4 }}
         >
-          {['python', 'javascript'].map(lang => (
+          {['java', 'javascript'].map(lang => (
             <div key={lang} style={{ display: activeTab === lang ? 'block' : 'none' }}>
-              {typedLines[lang as 'python' | 'javascript'].map((line, index) => (
+              {typedLines[lang as 'java' | 'javascript'].map((line, index) => (
                 <motion.div
                   key={index}
                   className={index <= currentLine[lang] ? 'text-primary' : 'text-muted-foreground'}
@@ -142,10 +142,10 @@ const Terminal = () => {
                 >
                   <span className="text-secondary mr-2">&gt;&gt;</span>
                   <span className="text-muted-foreground">
-                    {line.slice(0, lang === 'python' ? 6 : 12)}
+                    {line.slice(0, lang === 'java' ? 6 : 12)}
                   </span>
                   <span className="text-primary">
-                    {line.slice(lang === 'python' ? 6 : 12)}
+                    {line.slice(lang === 'java' ? 6 : 12)}
                   </span>
                   {index === currentLine[lang] && isTyping[lang] && <span className="animate-blink">|</span>}
                 </motion.div>

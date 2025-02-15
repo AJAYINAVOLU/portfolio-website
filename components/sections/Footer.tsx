@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/jaynanduri' },
-    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/jayantha-nanduri/' },
-    { icon: FaInstagram, href: 'https://www.instagram.com/jay_nanduri/' },
-    { icon: LeetcodeIcon, href: 'https://leetcode.com/u/nandurij98/'},
-    { icon: FaEnvelope, href: 'mailto:jayantha.nanduri@gmail.com' },
+    { icon: FaGithub, href: 'https://github.com/AJAYINAVOLU' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/ajayinavolu/' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/' },
+    { icon: LeetcodeIcon, href: 'https://leetcode.com/u/AJAY_REDDY_1999/'},
+    { icon: FaEnvelope, href: 'mailto:ajay.inavolu@gmail.com' },
   ];
 
   return (
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
           <p className="text-lg font-mono">
             Designed & Built by{' '}
             <span className="text-primary font-bold">
-              Jayantha Nanduri
+              Ajay Kumar Reddy Inavolu
             </span>{' '}
             <span className="animate-pulse inline-block">🚀</span>
           </p>

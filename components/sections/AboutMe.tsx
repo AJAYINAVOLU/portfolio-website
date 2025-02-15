@@ -27,12 +27,12 @@ const AboutMe: React.FC = () => {
           </CardHeader>
           <CardContent className="text-sm sm:text-base text-foreground space-y-4">
             <p>
-             नमस्कार 🙏!! I&apos;m Jayantha Nanduri, an aspiring machine learning engineer passionate about creating scalable AI-driven solutions. I focus on developing microservices and data pipelines and excel at designing, implementing, and optimizing intelligent systems that solve real-world challenges. Leveraging my expertise in container technologies, I efficiently deploy scalable applications on cloud platforms, ensuring high availability and seamless integration. My commitment to advancing machine learning capabilities reflects my drive for excellence in delivering impactful, future-ready technologies.
+            నమస్కారం🙏!! I&apos;m Ajay Kumar Reddy Inavolu, a passionate Full Stack Software Engineer dedicated to building scalable, high-performance applications. I specialize in designing and deploying robust microservices, optimizing real-time data processing, and architecting cloud-native solutions. My expertise spans backend development with Java, Spring Boot, and frontend engineering with React and Next.js, ensuring seamless user experiences. With a strong foundation in distributed systems, containerization (Docker, Kubernetes), and cloud technologies (AWS, ELK, Kafka), I thrive on solving complex engineering challenges. Committed to innovation and excellence, I continuously refine systems for high availability, performance, and security, shaping the future of technology with impactful solutions.
             </p>
             <p>
               <FaCode className="inline-block mr-2" /> 
 
-              After spending three years as a machine learning professional, I decided to return to school to pursue my master&apos;s degree. This journey significantly enhanced my skills as a problem-solver and critical thinker. I deepened my understanding of designing efficient algorithms, a vital aspect of building scalable systems. Along the way, I developed a passion for coding challenges, turning them into enjoyable and rewarding opportunities to sharpen my skills.            </p>
+              After gaining hands-on experience as a Full Stack Software Engineer, I decided to pursue my Master&apos;s in Computer Science to deepen my expertise in scalable system design, cloud computing, and distributed architectures. This journey has significantly enhanced my problem-solving and critical thinking skills, allowing me to refine my approach to building efficient algorithms and optimizing system performance. Along the way, I developed a passion for solving complex coding challenges, turning them into opportunities to push my technical boundaries and continuously evolve as an engineer.            </p>
             <p>
               When I&apos;m not crunching numbers or coding, you might find me:
             </p>
@@ -42,7 +42,7 @@ const AboutMe: React.FC = () => {
               <li><GiSoccerKick className="inline-block mr-2" /> Playing soccer (GGMU!!!)</li>
             </ul>
             <p>
-            Currently, I&apos;m deeply immersed in exploring Large Language Models (LLMs) while indulging in web development as a side hobby. I enjoy staying updated on the latest technical innovations from leading tech companies, which constantly inspire me to enhance my skills. As a firm believer in lifelong learning and self-improvement, I embrace every opportunity to grow and expand my knowledge, no matter the circumstances.            </p>
+            Currently, I&apos;m deeply engaged in building scalable full-stack applications while exploring the potential of Large Language Models (LLMs) and cloud-native architectures. I stay updated on the latest technological advancements from leading tech companies, drawing inspiration to refine my skills and explore cutting-edge innovations. As a firm believer in lifelong learning and continuous improvement, I embrace every challenge as an opportunity to grow, expand my knowledge, and push the boundaries of what technology can achieve. </p>
           </CardContent>
         </Card>
       </motion.div>

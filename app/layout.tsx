@@ -9,8 +9,8 @@ import Footer from "@/components/sections/Footer";
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
-  title: "Jayantha Nanduri",
-  description: "Portfolio page of Jayantha Nanduri",
+  title: "Ajay Kumar Reddy Inavolu",
+  description: "Portfolio page of Ajay Kumar Reddy Inavolu",
 };
 
 const navItems = [
@@ -44,10 +44,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:title" content="Jayantha's Portfolio" />
+        <meta property="og:title" content="Ajay's Portfolio" />
         <meta
           property="og:description"
-          content="Machine Learning Engineer with 3+ years of experience in the FinTech industry. Skilled in implementing AI-based microservices using Python, SQL, Javascript, Docker, and AWS."
+          content="Dedicated Engineer with expertise in building scalable, high-performance microservices and real-time data processing solutions. Proficient in designing and deploying distributed cloud and AI platforms, leveraging Java, Spring Boot, Docker, AWS."
           />
         <meta property="og:type" content="website" />
       </head>

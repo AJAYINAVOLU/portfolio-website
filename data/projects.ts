@@ -19,7 +19,7 @@ export const projects: Project[] = [
   description: "A single-page application portfolio website built using Next.js, TailwindCSS, and shadcn/ui components.",
   icon: RiNextjsFill,
   technologies: ["Next.js", "React", "TypeScript", "TailwindCSS", "shadcn/ui"],
-  githubLink: "https://github.com/jaynanduri/portfolio-website",
+  githubLink: "https://github.com/AJAYINAVOLU/portfolio-website",
   },
   {
   id: 2,
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   description: "Implemented PageRank in MapReduce and Spark to analyze 1M nodes dense web graph on EMR cluster with I/O handling in S3 buckets",
   icon: PiGraphThin,
   technologies: ["PageRank", "Python", "Java", "PySpark", "AWS", "Hadoop"],
-  githubLink: "https://github.com/jaynanduri/text-search-engine",
+  githubLink: "https://github.com/AJAYINAVOLU/PageRank",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     description: "Innovative social media platform designed to creatively generate and share art based on user-provided prompts.",
     icon: SiReact,
     technologies: ["Javascript", "React", "Express", "Redux", "MongoDB", "MaterialUI", "Stable Diffusion", "Transformers"],
-    githubLink: "https://github.com/jaynanduri/text-search-engine",
+    githubLink: "https://github.com/AJAYINAVOLU/portfolio-website",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     description: "Crafted a Java-based image editing tool with an intuitive GUI, allowing users to load, modify, and save images through both graphical and text-based inputs.",
     icon: RiImageAiFill,
     technologies: ["Java", "MVC design pattern", "JSwing", "JUnit"],
-    githubLink: "https://github.com/jaynanduri/Image-Processing",
+    githubLink: "https://github.com/AJAYINAVOLU/Image-Processing",
   },
   {
     id: 5,
@@ -51,6 +51,6 @@ export const projects: Project[] = [
     description: "Fine-tuned a large language model (LLM) to generate coherent stories, trained on Facebook AI research dataset with 300,000 entries.",
     icon: RiAiGenerate2,
     technologies: ["Python", "DistilGPT", "Llama", "HuggingFace", "LangChain"],
-    githubLink: "https://github.com/jaynanduri/story-generation",
+    githubLink: "https://github.com/AJAYINAVOLU/story-generation",
   },
 ];
